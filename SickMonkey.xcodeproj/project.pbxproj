@@ -14,13 +14,16 @@
 		5592A0DE17DF5BDB00A5C09B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5592A0DD17DF5BDB00A5C09B /* main.m */; };
 		5592A0E217DF5BDB00A5C09B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5592A0E117DF5BDB00A5C09B /* AppDelegate.m */; };
 		5592A0E517DF5BDB00A5C09B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5592A0E317DF5BDB00A5C09B /* Main.storyboard */; };
-		5592A0E817DF5BDB00A5C09B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5592A0E717DF5BDB00A5C09B /* ViewController.m */; };
+		5592A0E817DF5BDB00A5C09B /* CageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5592A0E717DF5BDB00A5C09B /* CageViewController.m */; };
 		5592A0EA17DF5BDB00A5C09B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5592A0E917DF5BDB00A5C09B /* Images.xcassets */; };
 		5592A0F117DF5BDB00A5C09B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5592A0F017DF5BDB00A5C09B /* XCTest.framework */; };
 		5592A0F217DF5BDB00A5C09B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5592A0D117DF5BDB00A5C09B /* Foundation.framework */; };
 		5592A0F317DF5BDB00A5C09B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5592A0D517DF5BDB00A5C09B /* UIKit.framework */; };
 		5592A0FB17DF5BDB00A5C09B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5592A0F917DF5BDB00A5C09B /* InfoPlist.strings */; };
 		5592A0FD17DF5BDB00A5C09B /* SickMonkeyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5592A0FC17DF5BDB00A5C09B /* SickMonkeyTests.m */; };
+		5592A10717DF615D00A5C09B /* monkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5592A10617DF615D00A5C09B /* monkey.jpg */; };
+		5592A10917DF655400A5C09B /* dead.png in Resources */ = {isa = PBXBuildFile; fileRef = 5592A10817DF655400A5C09B /* dead.png */; };
+		55FDBB7917E07AF400069180 /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 55FDBB7817E07AF400069180 /* Monkey.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +48,18 @@
 		5592A0E017DF5BDB00A5C09B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5592A0E117DF5BDB00A5C09B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5592A0E417DF5BDB00A5C09B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5592A0E617DF5BDB00A5C09B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5592A0E717DF5BDB00A5C09B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5592A0E617DF5BDB00A5C09B /* CageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CageViewController.h; sourceTree = "<group>"; };
+		5592A0E717DF5BDB00A5C09B /* CageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CageViewController.m; sourceTree = "<group>"; };
 		5592A0E917DF5BDB00A5C09B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5592A0EF17DF5BDB00A5C09B /* SickMonkeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SickMonkeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5592A0F017DF5BDB00A5C09B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5592A0F817DF5BDB00A5C09B /* SickMonkeyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SickMonkeyTests-Info.plist"; sourceTree = "<group>"; };
 		5592A0FA17DF5BDB00A5C09B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5592A0FC17DF5BDB00A5C09B /* SickMonkeyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SickMonkeyTests.m; sourceTree = "<group>"; };
+		5592A10617DF615D00A5C09B /* monkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monkey.jpg; sourceTree = "<group>"; };
+		5592A10817DF655400A5C09B /* dead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dead.png; sourceTree = "<group>"; };
+		55FDBB7717E07AF400069180 /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
+		55FDBB7817E07AF400069180 /* Monkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monkey.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +122,9 @@
 				5592A0E017DF5BDB00A5C09B /* AppDelegate.h */,
 				5592A0E117DF5BDB00A5C09B /* AppDelegate.m */,
 				5592A0E317DF5BDB00A5C09B /* Main.storyboard */,
-				5592A0E617DF5BDB00A5C09B /* ViewController.h */,
-				5592A0E717DF5BDB00A5C09B /* ViewController.m */,
-				5592A0E917DF5BDB00A5C09B /* Images.xcassets */,
+				55FDBB7B17E0A6ED00069180 /* CageViewController */,
 				5592A0D817DF5BDB00A5C09B /* Supporting Files */,
+				55FDBB7A17E0A6DF00069180 /* Monkey */,
 			);
 			path = SickMonkey;
 			sourceTree = "<group>";
@@ -126,6 +132,9 @@
 		5592A0D817DF5BDB00A5C09B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5592A10817DF655400A5C09B /* dead.png */,
+				5592A10617DF615D00A5C09B /* monkey.jpg */,
+				5592A0E917DF5BDB00A5C09B /* Images.xcassets */,
 				5592A0D917DF5BDB00A5C09B /* SickMonkey-Info.plist */,
 				5592A0DA17DF5BDB00A5C09B /* InfoPlist.strings */,
 				5592A0DD17DF5BDB00A5C09B /* main.m */,
@@ -150,6 +159,24 @@
 				5592A0F917DF5BDB00A5C09B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55FDBB7A17E0A6DF00069180 /* Monkey */ = {
+			isa = PBXGroup;
+			children = (
+				55FDBB7717E07AF400069180 /* Monkey.h */,
+				55FDBB7817E07AF400069180 /* Monkey.m */,
+			);
+			name = Monkey;
+			sourceTree = "<group>";
+		};
+		55FDBB7B17E0A6ED00069180 /* CageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5592A0E617DF5BDB00A5C09B /* CageViewController.h */,
+				5592A0E717DF5BDB00A5C09B /* CageViewController.m */,
+			);
+			name = CageViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,9 +255,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5592A10917DF655400A5C09B /* dead.png in Resources */,
 				5592A0EA17DF5BDB00A5C09B /* Images.xcassets in Resources */,
 				5592A0DC17DF5BDB00A5C09B /* InfoPlist.strings in Resources */,
 				5592A0E517DF5BDB00A5C09B /* Main.storyboard in Resources */,
+				5592A10717DF615D00A5C09B /* monkey.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,8 +278,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5592A0E817DF5BDB00A5C09B /* ViewController.m in Sources */,
+				5592A0E817DF5BDB00A5C09B /* CageViewController.m in Sources */,
 				5592A0E217DF5BDB00A5C09B /* AppDelegate.m in Sources */,
+				55FDBB7917E07AF400069180 /* Monkey.m in Sources */,
 				5592A0DE17DF5BDB00A5C09B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,6 +484,7 @@
 				5592A10217DF5BDB00A5C09B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5592A10317DF5BDB00A5C09B /* Build configuration list for PBXNativeTarget "SickMonkeyTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +493,7 @@
 				5592A10517DF5BDB00A5C09B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,21 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4451" systemVersion="13A461" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3676"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Cage View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="CageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ftQ-sl-dWL"/>
+                        <viewControllerLayoutGuide type="bottom" id="9K9-45-qRG"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMU-Ir-Nzo">
+                                <rect key="frame" x="0.0" y="94" width="320" height="320"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="tWg-do-U1y"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGO-Rr-NEp">
+                                <rect key="frame" x="20" y="518" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start Simulation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startSimulationButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lRm-M0-c0T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRd-s4-IZR">
+                                <rect key="frame" x="184" y="518" width="116" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset Simulation">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetSimulation:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jIR-4t-oto"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Days: 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HjI-ns-hlW">
+                                <rect key="frame" x="20" y="61" width="58" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="4PA-xe-jGm">
+                                <rect key="frame" x="206" y="57" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="dayStepperChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="AVj-Wy-feN"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minimumValue="3" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="yEE-qa-O7N">
+                                <rect key="frame" x="206" y="20" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <action selector="gridStepperChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="9D9-D7-KTC"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grid size: 5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mY-15-4Sx">
+                                <rect key="frame" x="20" y="24" width="87" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JMU-Ir-Nzo" firstAttribute="top" secondItem="4PA-xe-jGm" secondAttribute="bottom" constant="8" symbolic="YES" id="1VP-76-ve3"/>
+                            <constraint firstItem="JMU-Ir-Nzo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="2eh-Cg-Diw"/>
+                            <constraint firstItem="yEE-qa-O7N" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="3zG-Fq-niA"/>
+                            <constraint firstAttribute="trailing" secondItem="yEE-qa-O7N" secondAttribute="trailing" constant="20" symbolic="YES" id="85Z-Wj-52c"/>
+                            <constraint firstItem="eRd-s4-IZR" firstAttribute="trailing" secondItem="4PA-xe-jGm" secondAttribute="trailing" id="CWQ-0G-wCC"/>
+                            <constraint firstAttribute="trailing" secondItem="JMU-Ir-Nzo" secondAttribute="trailing" id="Hhi-LZ-PPK"/>
+                            <constraint firstItem="2mY-15-4Sx" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="IDW-SX-Nym"/>
+                            <constraint firstItem="HjI-ns-hlW" firstAttribute="leading" secondItem="sGO-Rr-NEp" secondAttribute="leading" id="JW2-iZ-EWK"/>
+                            <constraint firstItem="yEE-qa-O7N" firstAttribute="leading" secondItem="4PA-xe-jGm" secondAttribute="leading" id="O8u-fm-mzv"/>
+                            <constraint firstItem="2mY-15-4Sx" firstAttribute="centerY" secondItem="yEE-qa-O7N" secondAttribute="centerY" id="Ui7-nS-Idd"/>
+                            <constraint firstItem="sGO-Rr-NEp" firstAttribute="baseline" secondItem="eRd-s4-IZR" secondAttribute="baseline" id="UwC-xM-S41"/>
+                            <constraint firstItem="2mY-15-4Sx" firstAttribute="leading" secondItem="HjI-ns-hlW" secondAttribute="leading" id="dac-RV-vNv"/>
+                            <constraint firstItem="4PA-xe-jGm" firstAttribute="top" secondItem="yEE-qa-O7N" secondAttribute="bottom" constant="8" symbolic="YES" id="q04-7h-gc4"/>
+                            <constraint firstAttribute="bottom" secondItem="sGO-Rr-NEp" secondAttribute="bottom" constant="20" symbolic="YES" id="rlD-ef-c6N"/>
+                            <constraint firstItem="HjI-ns-hlW" firstAttribute="centerY" secondItem="4PA-xe-jGm" secondAttribute="centerY" id="tUd-Rf-MHC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cageView" destination="JMU-Ir-Nzo" id="JzN-ez-D4G"/>
+                        <outlet property="dayStepper" destination="4PA-xe-jGm" id="0Ej-FT-ROO"/>
+                        <outlet property="daysLabel" destination="HjI-ns-hlW" id="Fab-Lp-cps"/>
+                        <outlet property="gridLabel" destination="2mY-15-4Sx" id="LZI-cN-nU6"/>
+                        <outlet property="gridStepper" destination="yEE-qa-O7N" id="ZZy-64-wTk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="313" y="114"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
